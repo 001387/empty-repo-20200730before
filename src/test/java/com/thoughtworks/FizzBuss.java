@@ -24,4 +24,14 @@ public class FizzBuss {
 //		then
 		assertEquals("Fizz", fizz);
 	}
+	
+	@Test
+	public void should_return_Buzz_when_given_5() {
+//		given
+		int number = 5;
+//		when
+		String buzz = FizzBuzz.fizzBuzz(number);
+//		then
+		assertEquals("Buzz", buzz);
+	}
 }

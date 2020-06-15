@@ -60,5 +60,16 @@ public class FizzBuss {
 		assertEquals("FizzBuzz", whizz);
 	}
 	
+	@Test
+	public void should_return_Whizz_when_given_multiple_of_3_and_7() {
+		FizzBuzz fizzBuzz = new FizzBuzz();
+//		given
+		int number = 21;
+//		when
+		String FizzWhizz = fizzBuzz.fizzBuzz(number);
+//		then
+		assertEquals("FizzWhizz", FizzWhizz);
+	}
+	
 	
 }

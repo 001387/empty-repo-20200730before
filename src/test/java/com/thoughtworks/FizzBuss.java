@@ -57,7 +57,7 @@ public class FizzBuss {
 //		when
 		String whizz = fizzBuzz.fizzBuzz(number);
 //		then
-		assertEquals("Whizz", whizz);
+		assertEquals("FizzBuzz", whizz);
 	}
 	
 	

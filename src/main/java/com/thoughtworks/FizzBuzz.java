@@ -8,11 +8,19 @@ public class FizzBuzz {
 		String Buzz = "Buzz";
 		String Whizz = "Whizz";
 		
-		if (String.valueOf(number).contains("5")) {
-			
+		if (String.valueOf(number).contains("7")) {
+			if(number % 3 == 0) {
+				return result += Fizz;
+			} 
+		} else if (String.valueOf(number).contains("5")) {
 		} else if (String.valueOf(number).contains("3")) {
 			return result += Fizz;
 		}
+		
+		/*else if (String.valueOf(number).contains("5")) {
+		} else if (String.valueOf(number).contains("3")) {
+			return result += Fizz;
+		}*/
 		
 		if (number % 3 == 0 && number % 5 == 0 && number % 7 == 0) {
 			return result += Fizz + Buzz + Whizz;

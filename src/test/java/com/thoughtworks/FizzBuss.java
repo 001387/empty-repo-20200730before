@@ -114,4 +114,15 @@ public class FizzBuss {
 //		then
 		assertEquals("BuzzWhizz", BuzzWhizz);
 	}
+	
+	@Test
+	public void should_return_Fizz_when_given_number_contains_7() {
+		FizzBuzz fizzBuzz = new FizzBuzz();
+//		given
+		int number = 75;
+//		when
+		String Fizz = fizzBuzz.fizzBuzz(number);
+//		then
+		assertEquals("Fizz", Fizz);
+	}
 }

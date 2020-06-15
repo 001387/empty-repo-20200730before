@@ -1,4 +1,4 @@
-package com.thoughtworks;
+/*package com.thoughtworks;
 
 public class HelloWorld {
     private Dependency dependency;
@@ -11,3 +11,4 @@ public class HelloWorld {
         return dependency.say();
     }
 }
+*/

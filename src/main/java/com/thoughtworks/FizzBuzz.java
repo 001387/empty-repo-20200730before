@@ -1,7 +1,5 @@
 package com.thoughtworks;
 
-import javax.xml.ws.AsyncHandler;
-
 public class FizzBuzz {
 
 	public String fizzBuzz(int number) {
@@ -10,6 +8,12 @@ public class FizzBuzz {
 		String Buzz = "Buzz";
 		String Whizz = "Whizz";
 		
+		char[] chars = String.valueOf(number).toCharArray();
+		for (char containsChar : chars) {
+			if (containsChar == '3') {
+				return result += Fizz;
+			}
+		}
 		
 		if (number % 3 == 0 && number % 5 == 0 && number % 7 == 0) {
 			return result += Fizz + Buzz + Whizz;

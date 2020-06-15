@@ -93,5 +93,14 @@ public class FizzBuss {
 		assertEquals("FizzBuzzWhizz", FizzBuzzWhizz);
 	}
 	
-	
+	@Test
+	public void should_return_Fizz_when_given_number_contains_3() {
+		FizzBuzz fizzBuzz = new FizzBuzz();
+//		given
+		int number = 30;
+//		when
+		String Fizz = fizzBuzz.fizzBuzz(number);
+//		then
+		assertEquals("Fizz", Fizz);
+	}
 }

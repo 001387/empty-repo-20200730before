@@ -75,10 +75,23 @@ public class FizzBuss {
 	public void should_return_Whizz_when_given_multiple_of_5_and_7() {
 		FizzBuzz fizzBuzz = new FizzBuzz();
 //		given
-		int number = 35;
+		int number = 70;
 //		when
 		String BuzzWhizz = fizzBuzz.fizzBuzz(number);
 //		then
 		assertEquals("BuzzWhizz", BuzzWhizz);
 	}
+	
+	@Test
+	public void should_return_Whizz_when_given_multiple_of_3_and_5_and_7() {
+		FizzBuzz fizzBuzz = new FizzBuzz();
+//		given
+		int number = 105;
+//		when
+		String FizzBuzzWhizz = fizzBuzz.fizzBuzz(number);
+//		then
+		assertEquals("FizzBuzzWhizz", FizzBuzzWhizz);
+	}
+	
+	
 }
